@@ -1,0 +1,232 @@
+{
+  "maxPlayers": 1,
+  "crossroads": [
+    {
+      "wasteChanged": {
+        "identifier": 1,
+        "amount": 1,
+        "consequence": {
+          "spawnZombies": {
+            "amount": 3
+          }
+        }
+      }
+    },
+    {
+      "moved": {
+        "identifier": 2,
+        "locationId": 4,
+        "consequence": {
+          "spawnSurvivors": {
+            "amount": 1
+          }
+        }
+      }
+    }
+  ],
+  "cards": [
+    {
+      "fuel": {
+        "identifier": 1000
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1001
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1002
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1003
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1004
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1005
+      }
+    },
+    {
+      "blueprint": {
+        "location": 6,
+        "identifier": 1006
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1007
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1008
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1009
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1010
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1011
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1012
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1013
+      }
+    },
+    {
+      "colt": {
+        "identifier": 1014
+      }
+    }
+  ],
+  "characters": [
+    {
+      "name": "Carla Thompson",
+      "identifier": 1,
+      "status": 22,
+      "attack": 4,
+      "search": 2,
+      "ability": {
+        "search": {
+          "maxActivations": 100,
+          "location": 6,
+          "numCards": 1
+        }
+      }
+    },
+    {
+      "name": "Brian Lee",
+      "identifier": 2,
+      "status": 68,
+      "attack": 3,
+      "search": 4,
+      "ability": {
+        "wound": {
+          "before": "bite",
+          "after": "wound"
+        }
+      }
+    },
+    {
+      "name": "David Garcia",
+      "identifier": 3,
+      "status": 50,
+      "attack": 4,
+      "search": 3,
+      "ability": {
+        "search": {
+          "maxActivations": 100,
+          "location": 6,
+          "numCards": 1
+        }
+      }
+    },
+    {
+      "name": "Jenny Clark",
+      "identifier": 4,
+      "status": 24,
+      "attack": 4,
+      "search": 3,
+      "ability": {
+        "search": {
+          "maxActivations": 1,
+          "location": 6,
+          "numCards": 3
+        }
+      }
+    }
+  ],
+  "crises": [
+    {
+      "food": {
+        "requiredCards": 5,
+        "moralChange": 2,
+        "identifier": 11
+      }
+    },
+    {
+      "medicine": {
+        "requiredCards": 5,
+        "moralChange": 2,
+        "identifier": 13
+      }
+    }
+  ],
+  "goal": {
+    "rounds": 2,
+    "moral": 10,
+    "zombiesColony": 8,
+    "zombiesLocations": 2,
+    "survive": true,
+    "childrenInColony": 1
+  },
+  "locations": [
+    {
+      "colony": {
+        "identifier": 42,
+        "entrances": 3,
+        "startCards": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004
+        ]
+      }
+    },
+    {
+      "name": "Gas Station",
+      "identifier": 6,
+      "entrances": 2,
+      "survivorSpaces": 2,
+      "cards": [
+        1005,
+        1006,
+        1007,
+        1008,
+        1009
+      ]
+    },
+    {
+      "name": "Berlin",
+      "identifier": 4,
+      "entrances": 2,
+      "survivorSpaces": 2,
+      "cards": [
+        1010,
+        1011,
+        1012,
+        1013,
+        1014
+      ]
+    }
+  ]
+}
